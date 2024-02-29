@@ -115,20 +115,16 @@ h6 {
   width: 100%;
   height: auto;
 }
-.contentm{
-  
-    display: flex;
-  flex-wrap: wrap; 
+.contentm {
+  display: flex;
   justify-content: space-between;
-    
+  align-items: flex-start;
 }
-.middle-line{
-            
-  height:90%;
-  align-self: center;
-  width:0.5%;
-  background-color:red;
-  
+.mid-line {
+  width: 1px; 
+  background-color: #ccc; 
+  height: 100%; 
+  margin: 0 15px; 
 }
 .screen-container{
   background-color: coral;
@@ -138,19 +134,9 @@ h6 {
   align-items: center;
   
 }
-.left-container1{
-  background-color:white;
-  width:47%;
-  height:70%;
-  text-align:center;
-  position:sticky;
-}
-.right-container1{
-  background-color:white;
-  width:47%;
-  height:70%;
-  text-align:center;
-  position:sticky;
+.left-container1, .right-container1 {
+  width: 45%; 
+  padding: 15px;
 }
 /*my code part ends here */
 .section-header::before {
@@ -1687,18 +1673,23 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 50px;
   }
 }
-
 @media (max-width: 768px) {
   .contentm {
       flex-direction: column;
   }
 
   .left-container1, .right-container1 {
-      width: 100%; 
+      width: 100%;
+      margin-bottom: 20px;
   }
 
   .mid-line {
       display: none;
+  }
+
+  .left-container1 img, .right-container1 img {
+      width: 100%;
+      height: auto;
   }
 }
 
