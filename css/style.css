@@ -111,13 +111,15 @@ h6 {
 .presented-by{
   font-family:monospace;
 }
+.left-container1 img, .right-container1 img {
+  width: 100%;
+  height: auto;
+}
 .contentm{
   
-    background-color: white;
-    height: 100%;
-    width:100%;
     display: flex;
-    justify-content: space-between;
+  flex-wrap: wrap; 
+  justify-content: space-between;
     
 }
 .middle-line{
@@ -1685,6 +1687,21 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 50px;
   }
 }
+
+@media (max-width: 768px) {
+  .contentm {
+      flex-direction: column;
+  }
+
+  .left-container1, .right-container1 {
+      width: 100%; 
+  }
+
+  .mid-line {
+      display: none;
+  }
+}
+
 
 @media (max-width: 574px) {
   #venue .venue-info h3 {
