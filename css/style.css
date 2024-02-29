@@ -107,7 +107,50 @@ h6 {
   position: relative;
   padding-bottom: 20px;
 }
-
+/* my code part*/
+.presented-by{
+  font-family:monospace;
+}
+.contentm{
+  
+    background-color: white;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.middle-line{
+            
+  height:90%;
+  align-self: center;
+  width:0.5%;
+  background-color:red;
+  
+}
+.screen-container{
+  background-color: coral;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.left-container1{
+  background-color:white;
+  width:47%;
+  height:70%;
+  text-align:center;
+  position:sticky;
+}
+.right-container1{
+  background-color:white;
+  width:47%;
+  height:70%;
+  text-align:center;
+  position:sticky;
+}
+/*my code part ends here */
 .section-header::before {
   content: '';
   position: absolute;
